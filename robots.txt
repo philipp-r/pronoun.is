@@ -1,0 +1,16 @@
+Sitemap: https://pronouns.3q3.de/sitemap.xml
+
+User-agent: URLMetriken
+Disallow: /
+User-agent: URLJ
+Disallow: /
+User-agent: ia_archiver
+Disallow: /
+User-agent: heritrix
+Disallow: /
+User-agent: archive.org_bot
+Disallow: /
+User-agent: LinkArchiver
+Disallow: /
+User-agent: ArchiveBot
+Disallow: /
