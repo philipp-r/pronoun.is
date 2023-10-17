@@ -1,0 +1,16 @@
+# URL Rewrite rules
+	RewriteEngine on
+	RewriteBase /
+
+
+# index.php
+	RewriteRule ^([a-zA-Z]+)/([a-zA-Z]+)/$ index.php?subjPronoun=$1&objPronoun=$2 [QSA,L]
+  RewriteRule ^(DE|EN)/([a-zA-Z]+)/([a-zA-Z]+)/$ index.php?lang=$1&subjPronoun=$2&objPronoun=$3 [QSA,L]
+
+
+# svg
+	RewriteRule ^([a-zA-Z]+)/([a-zA-Z]+).svg$ svg.php?subjPronoun=$1&objPronoun=$2 [QSA,L]
+	RewriteRule ^([a-zA-Z]+)/([a-zA-Z]+)-([a-zA-Z0-9]+).svg$ svg.php?subjPronoun=$1&objPronoun=$2&color=$3 [QSA,L]
+
+	RewriteRule ^(DE|EN)/([a-zA-Z]+)/([a-zA-Z]+).svg$ svg.php?lang=$1&subjPronoun=$2&objPronoun=$3 [QSA,L]
+	RewriteRule ^(DE|EN)/([a-zA-Z]+)/([a-zA-Z]+)-([a-zA-Z0-9]+).svg$ svg.php?lang=$1&subjPronoun=$2&objPronoun=$3&color=$4 [QSA,L]

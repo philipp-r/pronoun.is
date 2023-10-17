@@ -1,5 +1,3 @@
-Sitemap: https://pronouns.3q3.de/sitemap.xml
-
 User-agent: URLMetriken
 Disallow: /
 User-agent: URLJ
